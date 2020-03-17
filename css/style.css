@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Lato:300");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/*main */
+.main {
+  width: 100vw;
+  height: 100vh;
+  /* background image */
+  background-image: url(../img/bg_001.jpg);
+  background-size: cover;
+}
+/* home */
+.home {
+  margin: 0 auto;
+  width: 70vw;
+  height: 80vh;
+  /* position */
+  position: relative;
+}
+/* logo */
+.logo {
+  width: 15vw;
+  height: 10vh;
+  /* position */
+  position: relative;
+  top: 8vh;
+}
+/* navigation */
+.navigation {
+  width: 50vw;
+  height: 10vh;
+  /* position */
+  position: absolute;
+  top: 9vh;
+  right: 0;
+  /* display flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav {
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: crosshair;
+}
+.nav:hover {
+  border-left: 3px solid lightseagreen;
+}
+/*container */
+.container {
+  width: 69vw;
+  height: 55vh;
+  /* position */
+  position: absolute;
+  bottom: 0;
+  /* display */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* text */
+.text {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+h2 {
+  font-size: 2.2rem;
+  cursor: crosshair;
+}
+.text-2 {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  cursor: crosshair;
+  font-size: 0.9rem;
+}
+
+/*phones */
+.phone {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+.phone1 {
+  width: 60%;
+  height: 97%;
+  position: absolute;
+  right: 0;
+}
+.phone2 {
+  width: 60%;
+  height: 97%;
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+}
+
+/* buttons */
+.button {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
+.learn {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: crosshair;
+  background-color: rgb(15, 122, 15);
+  border-radius: 4px;
+}
+.learn:active {
+  background-color: rgba(14, 54, 14, 0.658);
+}
+.get {
+  width: 40%;
+  height: 50%;
+  margin-left: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: crosshair;
+  background-color: dodgerblue;
+  border-radius: 4px;
+}
+.get:active {
+  background-color: rgba(17, 62, 110, 0.637);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 500px) {
+  /* (background-image) */
+  .main {
+    width: 100vw;
+    height: 100vh;
+    /* bg image */
+    background-image: url(../img/bg_001.jpg);
+    background-size: cover;
+  }
+ 
