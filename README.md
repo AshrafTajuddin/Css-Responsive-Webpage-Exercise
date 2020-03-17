@@ -38,4 +38,4 @@ using Font Awesome for the icon.
 
 #### Result
 
-[Feel free to click here for the deployment!](https://ashraftajuddin.github.io/Css-Responsive-Webpage-Exercise/)
+[Feel free to click here for the deployment!](https://ashraftajuddin.github.io/Css-responsive-webpage-exercise/)
