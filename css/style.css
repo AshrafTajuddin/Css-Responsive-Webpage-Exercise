@@ -108,34 +108,13 @@ body {
     border-radius: 3px;
     content: "";
     display: block;
-    height: 5px; /*height of the lines but if you
-    change this ignoring the width 30px on top, 
-    its going to behave wrongly */
-    margin: 7px 0; /*space between the lines but if you
-    change this ignoring the width 30px on top, 
-    its going to behave wrongly, yes its apparently 
-    the margin but it changes the psoition*/
-    transition: all 0.2s ease-in-out; /*how smooth i want
-     the transition*/
+    height: 5px;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
   }
-  /* --- */
-
-  /*Doing it with pseudo elements
-the BEFORE and AFTER are like the "Death star"
-in star wars, the ball/space station is there 
-but not there at the same time and yet can appear
-on command and have the same features as a ordinary div.
-"The ::before and ::after pseudo-elements 
-in CSS allows you to insert content onto 
-a page without it needing to be in the HTML."
-*/
 
   .nav-icon:hover:before {
     transform: translateY(12px) rotate(135deg);
-    /* repositions an element in the horizontal 
-    and/or vertical directions */
-
-    /* the rotate well rotate :) */
   }
 
   .nav-icon:hover:after {
@@ -144,13 +123,8 @@ a page without it needing to be in the HTML."
 
   .nav-icon:hover div {
     transform: scale(0);
-    /* will redue the middle line onto 0 so 
-    hidden, its there for when i hover and the lines 
-    form in x, if i put a 1 for example and i did the same 
-    action, i would see the middle line */
   }
 
-  /* -------my hamburger------------- */
   /* ------BOX-BOTTOM------------- */
   .children-container {
     width: 100%;
@@ -235,9 +209,6 @@ a page without it needing to be in the HTML."
     text-decoration: none;
   }
 
-  /* ------child2------- */
-
-  /* ------child2------- */
   /* ------child2------- */
   .child2 {
     width: 100%;
