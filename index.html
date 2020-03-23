@@ -1,58 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="icon/png" href="./img/task_001_homepage.png" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="icon/png" href="./images/task_001_homepage.png" />
 
-    <title>Responsive Webpage</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <title>Responsive Page</title>
   </head>
-
   <body>
-    <div class="main">
-      <div class="home">
-        <img class="logo" src="./img/logo_001.png" alt="logo" />
-        <div class="navigation">
-          <div class="nav">PRODUCTS</div>
-          <div class="nav">PRICES</div>
-          <div class="nav">BLOG</div>
-          <div class="nav">TEAM</div>
-          <div class="nav">LOGIN</div>
-          <div class="nav">SIGN UP</div>
-        </div>
-        <!-- container -->
-        <div class="container">
-          <div class="text">
-            <div class="header">
-              <h2>Make your Startup web with our template</h2>
+    <main id="page">
+      <section id="parent-content">
+        <!-- ---------------NAV---------------------- -->
+        <header>
+          <nav>
+            <!----HAMBURGER MENU----->
+
+            <div class="nav-icon">
+              <div></div>
             </div>
-            <div class="text-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-              commodi architecto distinctio corporis labore, eum eius voluptatem
-              exercitationem possimus non id atque! Cum optio aut, omnis numquam
-              qui id pariatur ad aspernatur modi amet iste ullam, quidem enim
-              sit fugit dolor eligendi veritatis! Ducimus quo est incidunt
-              expedita molestias aliquam.
+            <!----HAMBURGER MENU------>
+
+            <img
+              class="logo"
+              src="./images/logo_001.png"
+              alt="logo image"
+              width="200"
+            />
+            <ul>
+              <li class="nav-li">products</li>
+              <li class="nav-li">prices</li>
+              <li class="nav-li">blog</li>
+              <li class="nav-li">team</li>
+              <li class="nav-li">login</li>
+              <li class="nav-li">signUp</li>
+            </ul>
+          </nav>
+        </header>
+        <!-- ---------BOTTOM---------------------------- -->
+        <div class="children-container">
+          <div class="child1">
+            <div class="child1-text">
+              <h2>
+                Make your Startup web with our template
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Cumque, officia vero deserunt accusantium accusamus maxime
+                voluptas odio placeat eos sint nam, aliquid at necessitatibus
+                dignissimos, rerum aut fugiat numquam. Nihil laborum alias nam
+                beatae numquam ad maxime voluptates ipsam! Quae.
+              </p>
             </div>
-            <div class="button">
-              <div class="learn">Learn More</div>
-              <div class="get">Get the App</div>
+            <div class="child1-buttons">
+              <a class="button1" href="#">Learn more</a>
+              <a class="button2" href="#">Get the App</a>
             </div>
           </div>
-          <div class="phone">
-            <img class="phone1" src="./img/phone_001.png" alt="phone1" />
-            <img class="phone2" src="./img/phone_002.png" alt="phone2" />
+          <!-- ---------CHILD2-------------------- -->
+          <div class="child2">
+            <img
+              class="img1"
+              src="./images/phone_001.png"
+              width="200"
+              alt=" phone-1"
+            />
+
+            <img
+              class="img2"
+              src="./images/phone_002.png"
+              width="200"
+              alt="phone-2"
+            />
           </div>
         </div>
-        <!--end container -->
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
