@@ -31,6 +31,7 @@ body {
   border-left: 3px solid lightseagreen;
 }
 /* media queries*/
+/* Mobile Styles */
 @media only screen and (max-width: 400px) {
   html,
   body {
@@ -59,14 +60,13 @@ body {
     justify-content: center;
     align-items: center;
   }
-  /* ------NAV------------- */
+  /* ------BOX-TOP------------- */
   header {
     width: 100%;
     min-height: 10vh;
     padding: 2vh 0;
     background-color: transparent;
   }
-
   nav {
     width: 100%;
     height: 100%;
@@ -77,24 +77,24 @@ body {
   }
   nav ul li {
     display: inline;
+    padding: 0 0 0 10px;
     text-transform: uppercase;
+    font-family: "Poppins-medium";
     color: white;
     opacity: 0.8;
     font-size: 0.8rem;
-    cursor: crosshair;
+    visibility: hidden;
   }
   nav a {
     text-decoration: none;
     font-style: italic;
-    cursor: crosshair;
   }
   .logo {
+    font-family: "MuliBold";
+    font-size: 1rem;
     display: none;
-    width: 15vw;
-    height: 15vh;
-    cursor: crosshair;
   }
-  /* -------HAMBURGER MENU------------- */
+  /* -------my hamburger------------- */
 
   .nav-icon {
     margin: 1em;
@@ -108,13 +108,34 @@ body {
     border-radius: 3px;
     content: "";
     display: block;
-    height: 5px;
-    margin: 7px 0;
-    transition: all 0.4s ease-in-out;
+    height: 5px; /*height of the lines but if you
+    change this ignoring the width 30px on top, 
+    its going to behave wrongly */
+    margin: 7px 0; /*space between the lines but if you
+    change this ignoring the width 30px on top, 
+    its going to behave wrongly, yes its apparently 
+    the margin but it changes the psoition*/
+    transition: all 0.2s ease-in-out; /*how smooth i want
+     the transition*/
   }
+  /* --- */
+
+  /*Doing it with pseudo elements
+the BEFORE and AFTER are like the "Death star"
+in star wars, the ball/space station is there 
+but not there at the same time and yet can appear
+on command and have the same features as a ordinary div.
+"The ::before and ::after pseudo-elements 
+in CSS allows you to insert content onto 
+a page without it needing to be in the HTML."
+*/
 
   .nav-icon:hover:before {
     transform: translateY(12px) rotate(135deg);
+    /* repositions an element in the horizontal 
+    and/or vertical directions */
+
+    /* the rotate well rotate :) */
   }
 
   .nav-icon:hover:after {
@@ -123,8 +144,13 @@ body {
 
   .nav-icon:hover div {
     transform: scale(0);
+    /* will redue the middle line onto 0 so 
+    hidden, its there for when i hover and the lines 
+    form in x, if i put a 1 for example and i did the same 
+    action, i would see the middle line */
   }
 
+  /* -------my hamburger------------- */
   /* ------BOX-BOTTOM------------- */
   .children-container {
     width: 100%;
@@ -182,24 +208,24 @@ body {
     padding: 6px 20px;
     background-color: rgb(101, 204, 97);
     margin: 0 8px 0 0;
-    cursor: crosshair;
+    font-family: "Roboto";
   }
   .button1:hover {
     background-color: rgb(88, 173, 85);
-    transition: 0.5s;
+    transition: 2s;
   }
 
   .button2 {
     padding: 6px 20px;
-    background-color: rgb(70, 114, 149);
+    background-color: rgb(73, 118, 170);
     margin: 0 8px 0 0;
     /* box-shadow: 1px 1px 2px 1px #666; */
     font-family: "Roboto";
   }
   .button2:hover {
-    background-color: rgb(46, 81, 121);
+    background-color: rgb(102, 150, 204);
 
-    transition: 0.5s;
+    transition: 2s;
   }
 
   .child1-buttons a {
@@ -225,7 +251,6 @@ body {
     z-index: 1;
     top: 18%;
     left: 18%;
-    border-radius: 2px;
   }
 
   .img2 {
@@ -233,11 +258,10 @@ body {
 
     top: 14%;
     left: 37%;
-    border-radius: 2px;
   }
 }
 
-/* Tablet Styles */
+/* Tablet */
 @media only screen and (min-width: 401px) and (max-width: 600px) {
   html,
   body {
